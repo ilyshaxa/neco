@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "pricing": "Narxlar",
+    "portfolio": "Portfolio",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "headline": "Mahalliy bizneslar uchun arzon veb-saytlar",
+    "subheadline": "Biz O'zbekistondagi bizneslar uchun tez, zamonaviy, SEO-optimallashtirilgan veb-saytlarni umrbod hosting, umrbod qo'llab-quvvatlash va domen sotib olishda yordam bilan yaratamiz.",
+    "cta_primary": "Veb-saytga ega bo'ling",
+    "cta_secondary": "Narxlarni ko'rish",
+    "trust_badge_1": "Umrbod hosting",
+    "trust_badge_2": "Umrbod qo'llab-quvvatlash",
+    "trust_badge_3": "7-14 kunlik yetkazib berish"
+  },
+  "services": {
+    "title": "Bizning xizmatlar",
+    "subtitle": "Onlaynda muvaffaqiyat qozonish uchun hamma narsa",
+    "web_dev": {
+      "title": "Veb-sayt ishlab chiqish",
+      "description": "Zamonaviy dizayn va funksionallik bilan biznesingiz ehtiyojlariga moslashtirilgan maxsus, moslashuvchan veb-saytlar."
+    },
+    "seo": {
+      "title": "SEO optimallashtirish",
+      "description": "Ko'proq mahalliy mijozlarni jalb qilish uchun Google va Yandex qidiruv tizimlarida ko'rinishingizni yaxshilang."
+    },
+    "business_listings": {
+      "title": "Biznes profillarini sozlash",
+      "description": "Mahalliy ko'rinishni oshirish uchun biznesingizni Google Maps va Yandex Xaritalarda joylashtiring."
+    },
+    "domain": {
+      "title": "Domen bilan yordam",
+      "description": "Biznesingiz uchun mukammal domen nomini tanlash, sotib olish va sozlashda yordam beramiz."
+    }
+  },
+  "pricing": {
+    "title": "Oddiy, shaffof narxlar",
+    "subtitle": "Barcha tariflar umrbod hosting va qo'llab-quvvatlashni o'z ichiga oladi",
+    "popular": "Mashhur",
+    "basic": {
+      "name": "Asosiy",
+      "price": "$99",
+      "description": "Startaplar va kichik bizneslar uchun ideal",
+      "features": [
+        "Bir sahifali veb-sayt",
+        "Moslashuvchan dizayn",
+        "Asosiy SEO optimallashtirish",
+        "Aloqa shakli",
+        "Umrbod hosting",
+        "Umrbod qo'llab-quvvatlash",
+        "SSL sertifikat",
+        "Domen bilan yordam"
+      ]
+    },
+    "standard": {
+      "name": "Standart",
+      "price": "$199",
+      "description": "O'sib borayotgan biznes uchun ideal",
+      "features": [
+        "5 gacha sahifa",
+        "Moslashuvchan dizayn",
+        "Kengaytirilgan SEO optimallashtirish",
+        "Aloqa shakli",
+        "Google Analytics integratsiyasi",
+        "Ijtimoiy tarmoqlar integratsiyasi",
+        "Umrbod hosting",
+        "Umrbod qo'llab-quvvatlash",
+        "SSL sertifikat",
+        "Domen bilan yordam"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "$499",
+      "description": "Eng yaxshisini talab qiladigan biznes uchun",
+      "features": [
+        "Cheksiz sahifalar",
+        "Maxsus dizayn",
+        "Elektron tijoratga tayyor",
+        "Premium SEO optimallashtirish",
+        "Aloqa shakli",
+        "Google Analytics integratsiyasi",
+        "Ijtimoiy tarmoqlar integratsiyasi",
+        "Blog funksionalligi",
+        "Doimiy optimallashtirish",
+        "Ustuvor qo'llab-quvvatlash",
+        "Umrbod hosting",
+        "SSL sertifikat",
+        "Domen bilan yordam"
+      ]
+    },
+    "cta": "Boshlash"
+  },
+  "portfolio": {
+    "title": "Bizning ishlar",
+    "subtitle": "Faxr qilayotgan so'nggi loyihalar",
+    "view_project": "Loyihani ko'rish",
+    "projects": [
+      {
+        "name": "Mahalliy restoran",
+        "category": "Oziq-ovqat va ichimliklar"
+      },
+      {
+        "name": "Stomatologiya klinikasi",
+        "category": "Sog'liqni saqlash"
+      },
+      {
+        "name": "Yuridik firma",
+        "category": "Yuridik xizmatlar"
+      },
+      {
+        "name": "Go'zallik saloni",
+        "category": "Go'zallik va sog'liq"
+      },
+      {
+        "name": "Buxgalteriya firmasi",
+        "category": "Professional xizmatlar"
+      },
+      {
+        "name": "Ko'chmas mulk agentligi",
+        "category": "Ko'chmas mulk"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Mijozlarimiz fikri",
+    "subtitle": "Faqat bizning so'zimizga ishonmang",
+    "items": [
+      {
+        "name": "Alisher Karimov",
+        "company": "Karimov Restoran",
+        "text": "Neco bizga 30% ko'proq mijozlarni jalb qilgan chiroyli veb-sayt yaratishda yordam berdi. Umrbod qo'llab-quvvatlash beqiyos!",
+        "rating": 5
+      },
+      {
+        "name": "Dilnoza Sharipova",
+        "company": "Smile Stomatologiya Klinikasi",
+        "text": "Professional, tez va arzon. Bizning yangi veb-saytimiz ajoyib ko'rinadi va onlayn bandlovlarimiz sezilarli darajada oshdi.",
+        "rating": 5
+      },
+      {
+        "name": "Rustam Abdullayev",
+        "company": "Abdullayev Yuridik Firma",
+        "text": "Jamoa bizning ehtiyojlarimizni mukammal tushundi. SEO optimallashtirish bizga xizmatlarimiz bo'yicha Toshkentda 1-o'rinni egallashga yordam berdi.",
+        "rating": 5
+      }
+    ]
+  },
+  "about": {
+    "title": "Neco haqida",
+    "subtitle": "Raqamli muvaffaqiyat uchun ishonchli hamkor",
+    "description": "Biz O'zbekistondagi mahalliy bizneslar uchun arzon, yuqori sifatli veb-saytlar yaratishga ixtisoslashgan tajribali dasturchillar va dizaynerlar jamoasimiz. Backend ishlab chiqish, DevOps, frontend dizayn va SEO bo'yicha tajribaga ega bo'lib, to'liq raqamli yechimlarni taqdim etamiz.",
+    "stats": {
+      "years": "3+ yil",
+      "years_label": "Tajriba",
+      "projects": "50+ loyiha",
+      "projects_label": "Yakunlandi",
+      "clients": "45+ mijoz",
+      "clients_label": "Mamnun",
+      "satisfaction": "100%",
+      "satisfaction_label": "Qoniqish"
+    },
+    "expertise_title": "Bizning tajriba",
+    "expertise": {
+      "backend": {
+        "title": "Backend ishlab chiqish",
+        "description": "Ishonchli server tomonidagi yechimlar va API"
+      },
+      "devops": {
+        "title": "DevOps",
+        "description": "Ishonchli hosting va infratuzilma boshqaruvi"
+      },
+      "frontend": {
+        "title": "Frontend dizayn",
+        "description": "Chiroyli, qulay interfeys"
+      },
+      "seo": {
+        "title": "SEO optimallashtirish",
+        "description": "Maqsadli auditoriya tomonidan topiling"
+      }
+    },
+    "process_title": "Bizning jarayon",
+    "process": [
+      {
+        "title": "Maslahat",
+        "description": "Ehtiyojlar va maqsadlaringizni muhokama qilamiz",
+        "day": "1-kun"
+      },
+      {
+        "title": "Rejalashtirish va dizayn",
+        "description": "Maketlar yaratamiz va tuzilmani rejalashtiramiз",
+        "day": "2-3 kunlar"
+      },
+      {
+        "title": "Ishlab chiqish",
+        "description": "Veb-saytingizni eng yaxshi amaliyotlar bilan yaratamiz",
+        "day": "4-10 kunlar"
+      },
+      {
+        "title": "Ko'rib chiqish va tuzatishlar",
+        "description": "Sizning fikringiz va tuzatishlar",
+        "day": "11-12 kunlar"
+      },
+      {
+        "title": "Ishga tushirish va o'qitish",
+        "description": "Jonli efirga chiqamiz va saytni boshqarishni o'rgatamiz",
+        "day": "13-14 kunlar"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Tez-tez beriladigan savollar",
+    "subtitle": "Bilishingiz kerak bo'lgan hamma narsa",
+    "items": [
+      {
+        "question": "Umrbod qo'llab-quvvatlash nimani o'z ichiga oladi?",
+        "answer": "Umrbod qo'llab-quvvatlash xatolarni tuzatish, xavfsizlik yangilanishlari, kontent yangilanishlari va hostingimizdan foydalanganingizcha texnik yordamni o'z ichiga oladi. Siz hech qachon texnik xizmat ko'rsatish uchun qo'shimcha to'laysiz."
+      },
+      {
+        "question": "Ishlab chiqish qancha vaqt oladi?",
+        "answer": "Aksariyat veb-saytlar murakkabligiga qarab 7-14 kun ichida yakunlanadi. Dastlabki maslahatlashish paytida sizga aniq muddatlarni taqdim etamiz."
+      },
+      {
+        "question": "Veb-saytimni o'zim yangilashim mumkinmi?",
+        "answer": "Ha! Asosiy yangilanishlarni amalga oshirish uchun o'qitish va hujjatlarni taqdim etamiz. Murakkabroq o'zgartirishlar uchun qo'llab-quvvatlash xizmatimiz doimo yordam berishga tayyor."
+      },
+      {
+        "question": "Keyinchalik o'zgartirishlar kerak bo'lsa-chi?",
+        "answer": "Kichik o'zgarishlar va yangilanishlar umrbod qo'llab-quvvatlashga kiritilgan. Katta qayta dizaynlar yoki yangi funksiyalar uchun arzon yangilanish paketlarini taklif qilamiz."
+      },
+      {
+        "question": "O'zbekistondan tashqaridagi biznes bilan ishlaydimi?",
+        "answer": "O'zbekiston biznesiga ixtisoslashgan bo'lsak-da, qo'shni mamlakatlardan mijozlar bilan ishlashdan mamnunmiz. Loyihangizni muhokama qilish uchun biz bilan bog'laning."
+      },
+      {
+        "question": "Hali domenim yo'q bo'lsa-chi?",
+        "answer": "Muammo yo'q! Xizmatimiz doirasida biznesingiz uchun mukammal domen nomini tanlash va sotib olishda yordam beramiz."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Bugun veb-saytga ega bo'ling",
+    "subtitle": "Quyidagi shaklni to'ldiring va biz 24 soat ichida javob beramiz",
+    "form": {
+      "name": "To'liq ism",
+      "name_placeholder": "Ismingiz",
+      "email": "Elektron pochta",
+      "email_placeholder": "sizning@email.com",
+      "phone": "Telefon raqami",
+      "phone_placeholder": "+998 XX XXX XX XX",
+      "message": "Loyihangiz haqida bizga ayting",
+      "message_placeholder": "Biznesingiz va veb-sayt ehtiyojlaringizni tasvirlab bering...",
+      "submit": "Xabar yuborish",
+      "sending": "Yuborilmoqda...",
+      "success": "Rahmat! Biz siz bilan 24 soat ichida bog'lanamiz.",
+      "error": "Nimadir noto'g'ri ketdi. Iltimos, qayta urinib ko'ring yoki biz bilan to'g'ridan-to'g'ri bog'laning."
+    },
+    "info": {
+      "title": "Aloqa ma'lumotlari",
+      "telegram": "Telegram",
+      "phone": "Telefon",
+      "response_time": "Odatda biz 24 soat ichida javob beramiz"
+    }
+  },
+  "footer": {
+    "tagline": "Mahalliy bizneslar uchun arzon veb-saytlar",
+    "quick_links": "Tezkor havolalar",
+    "contact_us": "Biz bilan bog'laning",
+    "follow_us": "Bizni kuzatib boring",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "trust_badges": {
+      "satisfaction": "100% qoniqish kafolati",
+      "support": "24/7 qo'llab-quvvatlash",
+      "money_back": "Pulni qaytarish kafolati",
+      "delivery": "Tez yetkazib berish (7-14 kun)"
+    }
+  },
+  "common": {
+    "learn_more": "Ko'proq o'rganish",
+    "get_started": "Boshlash",
+    "read_more": "Davomini o'qish",
+    "close": "Yopish",
+    "menu": "Menyu"
+  }
+}
+
