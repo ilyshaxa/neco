@@ -29,7 +29,7 @@ export function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 p-2 rounded-lg bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors"
+        className="flex items-center gap-2 p-2 rounded-lg bg-gray-100 dark:bg-[#161B22] hover:bg-gray-200 dark:hover:bg-[#1C2128] transition-colors border border-transparent dark:border-[#30363D]"
         aria-label="Change language"
       >
         <Languages className="w-5 h-5" />
@@ -42,13 +42,13 @@ export function LanguageSwitcher() {
             className="fixed inset-0 z-10"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute right-0 mt-2 w-48 rounded-xl bg-white dark:bg-slate-800 shadow-xl border border-gray-200 dark:border-gray-700 z-20 overflow-hidden">
+          <div className="absolute right-0 mt-2 w-48 rounded-xl bg-white dark:bg-[#161B22] shadow-xl border border-gray-200 dark:border-[#30363D] z-20 overflow-hidden">
             {locales.map((loc) => (
               <button
                 key={loc.code}
                 onClick={() => handleLocaleChange(loc.code)}
-                className={`w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors flex items-center gap-3 ${
-                  loc.code === locale ? 'bg-gray-50 dark:bg-slate-700' : ''
+                className={`w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-[#1C2128] transition-colors flex items-center gap-3 ${
+                  loc.code === locale ? 'bg-gray-50 dark:bg-[#21262D]' : ''
                 }`}
               >
                 <span className="text-xl">{loc.flag}</span>

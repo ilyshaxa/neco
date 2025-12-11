@@ -36,63 +36,19 @@
       "description": "Biznesingiz uchun mukammal domen nomini tanlash, sotib olish va sozlashda yordam beramiz."
     }
   },
-  "pricing": {
-    "title": "Oddiy, shaffof narxlar",
-    "subtitle": "Barcha tariflar umrbod hosting va qo'llab-quvvatlashni o'z ichiga oladi",
-    "popular": "Mashhur",
-    "basic": {
-      "name": "Asosiy",
-      "price": "$99",
-      "description": "Startaplar va kichik bizneslar uchun ideal",
-      "features": [
-        "Bir sahifali veb-sayt",
-        "Moslashuvchan dizayn",
-        "Asosiy SEO optimallashtirish",
-        "Aloqa shakli",
-        "Umrbod hosting",
-        "Umrbod qo'llab-quvvatlash",
-        "SSL sertifikat",
-        "Domen bilan yordam"
-      ]
-    },
-    "standard": {
-      "name": "Standart",
-      "price": "$199",
-      "description": "O'sib borayotgan biznes uchun ideal",
-      "features": [
-        "5 gacha sahifa",
-        "Moslashuvchan dizayn",
-        "Kengaytirilgan SEO optimallashtirish",
-        "Aloqa shakli",
-        "Google Analytics integratsiyasi",
-        "Ijtimoiy tarmoqlar integratsiyasi",
-        "Umrbod hosting",
-        "Umrbod qo'llab-quvvatlash",
-        "SSL sertifikat",
-        "Domen bilan yordam"
-      ]
-    },
-    "premium": {
-      "name": "Premium",
-      "price": "$499",
-      "description": "Eng yaxshisini talab qiladigan biznes uchun",
-      "features": [
-        "Cheksiz sahifalar",
-        "Maxsus dizayn",
-        "Elektron tijoratga tayyor",
-        "Premium SEO optimallashtirish",
-        "Aloqa shakli",
-        "Google Analytics integratsiyasi",
-        "Ijtimoiy tarmoqlar integratsiyasi",
-        "Blog funksionalligi",
-        "Doimiy optimallashtirish",
-        "Ustuvor qo'llab-quvvatlash",
-        "Umrbod hosting",
-        "SSL sertifikat",
-        "Domen bilan yordam"
-      ]
-    },
-    "cta": "Boshlash"
+  "pricingCalculator": {
+    "title": "Mukammal veb-sayt yarating",
+    "subtitle": "Veb-saytingizni sozlang va narxning real vaqtda yangilanishini kuzating",
+    "websiteType": "Veb-sayt turini tanlang",
+    "addons": "Qo'shimcha funksiyalar",
+    "seoPackage": "SEO paketi",
+    "domainAssistance": "Domen sotib olishda yordam",
+    "domainDescription": "Mukammal domenni topish va ro'yxatdan o'tkazishda yordam beramiz",
+    "totalCost": "Umumiy narx",
+    "lifetimeHosting": "Umrbod hosting va qo'llab-quvvatlashni o'z ichiga oladi",
+    "yourQuote": "Sizning taklifingiz",
+    "getQuote": "Taklifni olish",
+    "noHiddenFees": "Yashirin to'lovlar yo'q • Shaffof narxlar"
   },
   "portfolio": {
     "title": "Bizning ishlar",

@@ -36,63 +36,19 @@
       "description": "We help you choose, purchase, and configure the perfect domain name for your business."
     }
   },
-  "pricing": {
-    "title": "Simple, Transparent Pricing",
-    "subtitle": "All plans include lifetime hosting and lifetime support",
-    "popular": "Most Popular",
-    "basic": {
-      "name": "Basic",
-      "price": "$99",
-      "description": "Perfect for startups and small businesses",
-      "features": [
-        "Single page website",
-        "Mobile responsive design",
-        "Basic SEO optimization",
-        "Contact form",
-        "Lifetime hosting",
-        "Lifetime support",
-        "SSL certificate",
-        "Domain assistance"
-      ]
-    },
-    "standard": {
-      "name": "Standard",
-      "price": "$199",
-      "description": "Ideal for growing businesses",
-      "features": [
-        "Up to 5 pages",
-        "Mobile responsive design",
-        "Advanced SEO optimization",
-        "Contact form",
-        "Google Analytics integration",
-        "Social media integration",
-        "Lifetime hosting",
-        "Lifetime support",
-        "SSL certificate",
-        "Domain assistance"
-      ]
-    },
-    "premium": {
-      "name": "Premium",
-      "price": "$499",
-      "description": "For businesses that need the best",
-      "features": [
-        "Unlimited pages",
-        "Custom design",
-        "E-commerce ready",
-        "Premium SEO optimization",
-        "Contact form",
-        "Google Analytics integration",
-        "Social media integration",
-        "Blog functionality",
-        "Ongoing optimization",
-        "Priority support",
-        "Lifetime hosting",
-        "SSL certificate",
-        "Domain assistance"
-      ]
-    },
-    "cta": "Get Started"
+  "pricingCalculator": {
+    "title": "Build Your Perfect Website",
+    "subtitle": "Configure your website and see the price update in real-time",
+    "websiteType": "Select Website Type",
+    "addons": "Add-On Features",
+    "seoPackage": "SEO Package",
+    "domainAssistance": "Domain Purchase Assistance",
+    "domainDescription": "We'll help you find and register the perfect domain",
+    "totalCost": "Total Investment",
+    "lifetimeHosting": "Includes lifetime hosting & support",
+    "yourQuote": "Your Quote",
+    "getQuote": "Get This Quote",
+    "noHiddenFees": "No hidden fees • Transparent pricing"
   },
   "portfolio": {
     "title": "Our Work",

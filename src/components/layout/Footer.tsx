@@ -2,42 +2,21 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Phone, Send, Shield, Zap, DollarSign, Clock } from 'lucide-react';
+import { Phone, Send } from 'lucide-react';
 
 export function Footer() {
   const t = useTranslations();
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { href: '#services', label: t('nav.services') },
+    { href: '#home', label: t('nav.home') },
+    { href: '#how-it-works', label: 'How It Works' },
     { href: '#pricing', label: t('nav.pricing') },
-    { href: '#portfolio', label: t('nav.portfolio') },
-    { href: '#about', label: t('nav.about') },
-  ];
-
-  const trustBadges = [
-    { icon: Shield, text: t('footer.trust_badges.satisfaction') },
-    { icon: Clock, text: t('footer.trust_badges.support') },
-    { icon: DollarSign, text: t('footer.trust_badges.money_back') },
-    { icon: Zap, text: t('footer.trust_badges.delivery') },
+    { href: '#contact', label: t('nav.contact') },
   ];
 
   return (
-    <footer className="bg-slate-950 dark:bg-black text-white">
-      {/* Trust Badges */}
-      <div className="border-b border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {trustBadges.map((badge, index) => (
-              <div key={index} className="flex items-center gap-3">
-                <badge.icon className="w-8 h-8 text-primary-light" />
-                <p className="text-sm font-medium">{badge.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
+    <footer className="bg-slate-950 dark:bg-[#0D1117] text-white border-t border-gray-800 dark:border-primary/20">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

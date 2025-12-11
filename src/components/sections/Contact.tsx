@@ -52,8 +52,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gray-50 dark:bg-slate-900/50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,8 +62,11 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            {t('title')}
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+            <span className="text-gray-900 dark:text-white">Get In </span>
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Touch
+            </span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             {t('subtitle')}
@@ -79,7 +82,7 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <Card>
+            <Card className="bg-white dark:bg-[#161B22] border-gray-200 dark:border-[#30363D]">
               <CardContent className="pt-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
@@ -185,7 +188,7 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <Card>
+            <Card className="bg-white dark:bg-[#161B22] border-gray-200 dark:border-[#30363D]">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">
                   {t('info.title')}

@@ -7,9 +7,11 @@ Modern, multilingual website for Neco IT agency specializing in affordable websi
 - 🌐 Multilingual support (English, Russian, Uzbek)
 - 🌙 Dark/Light theme toggle
 - 📱 Fully responsive design
-- ⚡ Fast and optimized with Next.js 14
+- ⚡ Fast and optimized with Next.js 16
 - 🎨 Modern UI with Tailwind CSS
 - ✨ Smooth animations with Framer Motion
+- 💰 Interactive pricing calculator with real-time updates
+- 🎁 Automatic bonus tier system
 - 📧 Contact form with Telegram integration
 - 🔍 SEO optimized
 
