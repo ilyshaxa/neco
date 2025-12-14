@@ -18,9 +18,25 @@
     "trust_badge_3": "Money-Back Guarantee",
     "trust_badge_4": "Fast Delivery (7-14 days)"
   },
+  "howItWorks": {
+    "title": "How It Works",
+    "titlePart1": "How It",
+    "titlePart2": "Works",
+    "subtitle": "Your trusted partner for digital success"
+  },
   "pricingCalculator": {
     "title": "Build Your Perfect Website",
-    "subtitle": "Configure your website and see the price update in real-time",
+    "titlePart1": "Build Your",
+    "titlePart2": "Perfect Website",
+    "subtitle": "Choose your package and customize with premium features",
+    "sectionTitle": "Choose Your Package",
+    "premiumAddons": "Premium Add-Ons",
+    "websiteTypes": {
+      "landing": "Landing Page",
+      "multipage": "Multi-Page Website",
+      "custom": "Custom Design",
+      "ecommerce": "E-commerce"
+    },
     "websiteType": "Select Website Type",
     "addons": "Add-On Features",
     "seoPackage": "SEO Package",
@@ -34,6 +50,8 @@
   },
   "testimonials": {
     "title": "What Our Clients Say",
+    "titlePart1": "What Our",
+    "titlePart2": "Clients Say",
     "subtitle": "Don't just take our word for it",
     "items": [
       {
@@ -119,7 +137,9 @@
     ]
   },
   "contact": {
-    "title": "Get Your Website Today",
+    "title": "Get In Touch",
+    "titlePart1": "Get In",
+    "titlePart2": "Touch",
     "subtitle": "Fill out the form below and we'll respond within 24 hours",
     "form": {
       "name": "Full Name",

@@ -93,6 +93,30 @@ const seoPackages = {
 export function PricingCalculatorModern() {
   const t = useTranslations('pricingCalculator');
   
+  // Generate website types with translations
+  const websiteTypesLocalized = {
+    landing: { 
+      name: t('websiteTypes.landing'), 
+      price: websiteTypes.landing.price,
+      description: websiteTypes.landing.description
+    },
+    multipage: { 
+      name: t('websiteTypes.multipage'), 
+      price: websiteTypes.multipage.price,
+      description: websiteTypes.multipage.description
+    },
+    custom: { 
+      name: t('websiteTypes.custom'), 
+      price: websiteTypes.custom.price,
+      description: websiteTypes.custom.description
+    },
+    ecommerce: { 
+      name: t('websiteTypes.ecommerce'), 
+      price: websiteTypes.ecommerce.price,
+      description: websiteTypes.ecommerce.description
+    },
+  };
+  
   const [config, setConfig] = useState<PricingConfig>({
     websiteType: 'multipage',
     addons: [],
@@ -103,7 +127,7 @@ export function PricingCalculatorModern() {
   const [hoveredInfo, setHoveredInfo] = useState<string | null>(null);
 
   useEffect(() => {
-    let total = websiteTypes[config.websiteType as keyof typeof websiteTypes].price;
+    let total = websiteTypesLocalized[config.websiteType as keyof typeof websiteTypesLocalized].price;
     
     config.addons.forEach(addon => {
       total += paidAddons[addon as keyof typeof paidAddons].price;
@@ -134,13 +158,13 @@ export function PricingCalculatorModern() {
           className="text-center mb-8"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-            <span className="text-gray-900 dark:text-white">Build Your </span>
+            <span className="text-gray-900 dark:text-white">{t('titlePart1')} </span>
             <span className="bg-gradient-to-r from-emerald-500 via-gray-800 to-green-500 dark:from-emerald-300 dark:via-white/90 dark:to-green-300 bg-clip-text text-transparent">
-              Perfect Website
+              {t('titlePart2')}
             </span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Choose your package and customize with premium features
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -154,10 +178,10 @@ export function PricingCalculatorModern() {
               viewport={{ once: true }}
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                Choose Your Package
+                {t('sectionTitle')}
               </h3>
               <div className="grid grid-cols-2 gap-3">
-                {Object.entries(websiteTypes).map(([key, { name, price, description }]) => (
+                {Object.entries(websiteTypesLocalized).map(([key, { name, price, description }]) => (
                   <div key={key} className="relative">
                     <motion.button
                       whileHover={{ scale: 1.01 }}
@@ -220,7 +244,7 @@ export function PricingCalculatorModern() {
               viewport={{ once: true }}
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                Premium Add-Ons
+                {t('premiumAddons')}
               </h3>
               <div className="grid grid-cols-2 gap-2">
                 {Object.entries(paidAddons).map(([key, { name, price, description }]) => (
@@ -342,11 +366,11 @@ export function PricingCalculatorModern() {
                     <div className="flex items-center gap-2">
                       <Check className="w-3 h-3 text-emerald-500 dark:text-emerald-400 flex-shrink-0" />
                       <span className="text-xs text-gray-700 dark:text-gray-300">
-                        {websiteTypes[config.websiteType as keyof typeof websiteTypes].name}
+                        {websiteTypesLocalized[config.websiteType as keyof typeof websiteTypesLocalized].name}
                       </span>
                     </div>
                     <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                      ${websiteTypes[config.websiteType as keyof typeof websiteTypes].price}
+                      ${websiteTypesLocalized[config.websiteType as keyof typeof websiteTypesLocalized].price}
                     </span>
                   </div>
 
@@ -365,7 +389,7 @@ export function PricingCalculatorModern() {
                   {/* Selected Add-ons */}
                   {config.addons.length > 0 && (
                     <>
-                      <div className="text-xs font-semibold text-gray-600 dark:text-gray-400 mt-3 mb-2">Premium Add-Ons</div>
+                      <div className="text-xs font-semibold text-gray-600 dark:text-gray-400 mt-3 mb-2">{t('premiumAddons')}</div>
                       {config.addons.map((addon) => (
                         <div key={addon} className="flex items-center justify-between p-2 rounded-lg bg-gray-100 dark:bg-[#1C2128] border border-gray-200 dark:border-[#30363D]">
                           <div className="flex items-center gap-2">

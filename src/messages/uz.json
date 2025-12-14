@@ -18,9 +18,25 @@
     "trust_badge_3": "Pulni qaytarish kafolati",
     "trust_badge_4": "Tez yetkazib berish (7-14 kun)"
   },
+  "howItWorks": {
+    "title": "Bu qanday ishlaydi",
+    "titlePart1": "Bu qanday",
+    "titlePart2": "ishlaydi",
+    "subtitle": "Raqamli muvaffaqiyat uchun ishonchli hamkor"
+  },
   "pricingCalculator": {
     "title": "Mukammal veb-sayt yarating",
-    "subtitle": "Veb-saytingizni sozlang va narxning real vaqtda yangilanishini kuzating",
+    "titlePart1": "Mukammal",
+    "titlePart2": "veb-sayt yarating",
+    "subtitle": "Paketingizni tanlang va premium funksiyalar bilan moslashtiring",
+    "sectionTitle": "Paketni tanlang",
+    "premiumAddons": "Premium qo'shimchalar",
+    "websiteTypes": {
+      "landing": "Landing sahifasi",
+      "multipage": "Ko'p sahifali veb-sayt",
+      "custom": "Maxsus dizayn",
+      "ecommerce": "Elektron do'kon"
+    },
     "websiteType": "Veb-sayt turini tanlang",
     "addons": "Qo'shimcha funksiyalar",
     "seoPackage": "SEO paketi",
@@ -34,6 +50,8 @@
   },
   "testimonials": {
     "title": "Mijozlarimiz fikri",
+    "titlePart1": "Mijozlarimiz",
+    "titlePart2": "fikri",
     "subtitle": "Faqat bizning so'zimizga ishonmang",
     "items": [
       {
@@ -119,7 +137,9 @@
     ]
   },
   "contact": {
-    "title": "Bugun veb-saytga ega bo'ling",
+    "title": "Biz bilan bog'laning",
+    "titlePart1": "Biz bilan",
+    "titlePart2": "bog'laning",
     "subtitle": "Quyidagi shaklni to'ldiring va biz 24 soat ichida javob beramiz",
     "form": {
       "name": "To'liq ism",

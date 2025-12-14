@@ -64,9 +64,9 @@ export function Contact() {
           className="text-center mb-16"
         >
               <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-                <span className="text-gray-900 dark:text-white">Get In </span>
+                <span className="text-gray-900 dark:text-white">{t('titlePart1')} </span>
                 <span className="bg-gradient-to-r from-emerald-500 via-gray-800 to-green-500 dark:from-emerald-300 dark:via-white/90 dark:to-green-300 bg-clip-text text-transparent">
-                  Touch
+                  {t('titlePart2')}
                 </span>
               </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
