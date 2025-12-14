@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { telegramBotConfig, checkRequiredEnvVars } from '@/lib/config';
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,15 +14,17 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get Telegram credentials from environment variables
-    const botToken = process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
-
-    if (!botToken || !chatId) {
-      console.error('Telegram credentials not configured');
-      // Return success to user even if not configured (for development)
+    // Check if Telegram bot is configured
+    if (!checkRequiredEnvVars()) {
+      console.error('Telegram bot not configured. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID environment variables.');
+      // Return success to user but log the error
       return NextResponse.json({ success: true });
     }
+
+    // Get Telegram credentials from config
+    const botToken = telegramBotConfig.token;
+    const chatId = telegramBotConfig.chatId;
+
 
     // Format message for Telegram
     const telegramMessage = `

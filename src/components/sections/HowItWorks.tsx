@@ -28,7 +28,7 @@ export function HowItWorks() {
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="text-gray-900 dark:text-white">How It </span>
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-500 via-gray-800 to-green-500 dark:from-emerald-300 dark:via-white/90 dark:to-green-300 bg-clip-text text-transparent">
               Works
             </span>
           </h2>

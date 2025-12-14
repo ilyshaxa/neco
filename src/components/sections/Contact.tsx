@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/Textarea';
 import { Button } from '@/components/ui/Button';
 import { Card, CardContent } from '@/components/ui/Card';
 import { useState, FormEvent } from 'react';
+import { contactConfig } from '@/lib/config';
 
 export function Contact() {
   const t = useTranslations('contact');
@@ -62,12 +63,12 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="text-gray-900 dark:text-white">Get In </span>
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Touch
-            </span>
-          </h2>
+              <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+                <span className="text-gray-900 dark:text-white">Get In </span>
+                <span className="bg-gradient-to-r from-emerald-500 via-gray-800 to-green-500 dark:from-emerald-300 dark:via-white/90 dark:to-green-300 bg-clip-text text-transparent">
+                  Touch
+                </span>
+              </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             {t('subtitle')}
           </p>
@@ -196,7 +197,7 @@ export function Contact() {
 
                 <div className="space-y-4">
                   <a
-                    href="https://t.me/necoagency"
+                    href={contactConfig.telegram.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-[#1C2128] hover:bg-gray-100 dark:hover:bg-[#21262D] transition-colors group border border-transparent dark:border-[#30363D]"
@@ -209,13 +210,13 @@ export function Contact() {
                         {t('info.telegram')}
                       </div>
                       <div className="font-semibold text-gray-900 dark:text-white">
-                        @necoagency
+                        @{contactConfig.telegram.handle}
                       </div>
                     </div>
                   </a>
 
                   <a
-                    href="tel:+998900000000"
+                    href={`tel:${contactConfig.phoneFormatted}`}
                     className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-[#1C2128] hover:bg-gray-100 dark:hover:bg-[#21262D] transition-colors group border border-transparent dark:border-[#30363D]"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -226,7 +227,7 @@ export function Contact() {
                         {t('info.phone')}
                       </div>
                       <div className="font-semibold text-gray-900 dark:text-white">
-                        +998 90 000 00 00
+                        {contactConfig.phone}
                       </div>
                     </div>
                   </a>

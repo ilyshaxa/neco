@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Check, TrendingUp, ArrowRight, Info } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { pricingConfig } from '@/lib/config';
 
 interface PricingConfig {
   websiteType: string;
@@ -15,22 +16,22 @@ interface PricingConfig {
 const websiteTypes = {
   landing: { 
     name: 'Landing Page', 
-    price: 49,
+    price: pricingConfig.websites.landing,
     description: 'Perfect for showcasing your business with a single, impactful page'
   },
   multipage: { 
     name: 'Multi-Page Website', 
-    price: 99,
+    price: pricingConfig.websites.multipage,
     description: 'Comprehensive website with multiple pages for detailed information'
   },
   custom: { 
     name: 'Custom Design', 
-    price: 249,
+    price: pricingConfig.websites.custom,
     description: 'Unique, tailor-made design that perfectly matches your brand'
   },
   ecommerce: { 
     name: 'E-commerce', 
-    price: 399,
+    price: pricingConfig.websites.ecommerce,
     description: 'Full online store with product management and payment integration'
   },
 };
@@ -47,51 +48,46 @@ const freeFeatures = [
 const paidAddons = {
   email: { 
     name: 'Business Email', 
-    price: 15,
+    price: pricingConfig.addons.email,
     description: 'Professional email addresses using your domain (e.g., info@yourbusiness.com)'
   },
   booking: { 
     name: 'Booking System', 
-    price: 20,
+    price: pricingConfig.addons.booking,
     description: 'Allow clients to book appointments or services directly on your website'
   },
-  gallery: { 
-    name: 'Photo Gallery', 
-    price: 20,
-    description: 'Beautiful image galleries to showcase your work or products'
-  },
-  multilang: { 
-    name: 'Multi-Language', 
-    price: 20,
-    description: 'Reach more customers with website translation in multiple languages'
+  forms: { 
+    name: 'Contact Forms', 
+    price: pricingConfig.addons.forms,
+    description: 'Custom contact and inquiry forms to capture leads'
   },
   analytics: { 
     name: 'Analytics', 
-    price: 20,
+    price: pricingConfig.addons.analytics,
     description: 'Track visitors and understand your audience with Google Analytics'
+  },
+  chat: { 
+    name: 'Live Chat', 
+    price: pricingConfig.addons.chat,
+    description: 'Real-time chat support to engage with your customers'
   },
   blog: { 
     name: 'Blog System', 
-    price: 40,
+    price: pricingConfig.addons.blog,
     description: 'Share news, articles, and updates with a fully-featured blog'
   },
-  ai: { 
-    name: 'AI ChatBot', 
-    price: 40,
-    description: 'Automated customer support chatbot to answer questions 24/7'
-  },
-  logo: { 
-    name: 'Logo Design', 
-    price: 50,
-    description: 'Custom logo design to establish your unique brand identity'
+  payment: { 
+    name: 'Payment Integration', 
+    price: pricingConfig.addons.payment,
+    description: 'Accept online payments with integrated payment gateway'
   },
 };
 
 const seoPackages = {
   none: { name: 'No SEO', price: 0 },
-  basic: { name: 'Basic SEO', price: 20 },
-  advanced: { name: 'Advanced SEO', price: 40 },
-  premium: { name: 'Premium SEO', price: 60 },
+  basic: { name: 'Basic SEO', price: pricingConfig.seo.basic },
+  standard: { name: 'Standard SEO', price: pricingConfig.seo.standard },
+  premium: { name: 'Premium SEO', price: pricingConfig.seo.premium },
 };
 
 export function PricingCalculatorModern() {
@@ -139,7 +135,7 @@ export function PricingCalculatorModern() {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
             <span className="text-gray-900 dark:text-white">Build Your </span>
-            <span className="bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-500 via-gray-800 to-green-500 dark:from-emerald-300 dark:via-white/90 dark:to-green-300 bg-clip-text text-transparent">
               Perfect Website
             </span>
           </h2>
@@ -176,7 +172,7 @@ export function PricingCalculatorModern() {
                       <div className="flex items-center justify-between">
                         <div className="text-left flex-1">
                           <h4 className="font-semibold text-sm text-gray-900 dark:text-white">{name}</h4>
-                          <div className="text-lg font-bold text-emerald-400">${price}</div>
+                          <div className="text-lg font-bold text-emerald-600 dark:text-emerald-400">${price}</div>
                         </div>
                         <div className="flex items-center gap-2">
                           {config.websiteType === key && (
@@ -190,7 +186,7 @@ export function PricingCalculatorModern() {
                             onMouseLeave={() => setHoveredInfo(null)}
                           >
                             <div className="p-1 hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors cursor-help">
-                              <Info className="w-4 h-4 text-gray-400" />
+                              <Info className="w-4 h-4 text-gray-500 dark:text-gray-400" />
                             </div>
                             
                             <AnimatePresence>
@@ -252,7 +248,7 @@ export function PricingCalculatorModern() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="font-medium text-xs text-gray-900 dark:text-white truncate">{name}</div>
-                            <div className="text-xs font-bold text-emerald-400">+${price}</div>
+                            <div className="text-xs font-bold text-emerald-600 dark:text-emerald-400">+${price}</div>
                           </div>
                         </div>
                         <div
@@ -261,7 +257,7 @@ export function PricingCalculatorModern() {
                           onMouseLeave={() => setHoveredInfo(null)}
                         >
                           <div className="p-1 hover:bg-gray-100 dark:hover:bg-gray-800 rounded transition-colors cursor-help">
-                            <Info className="w-3 h-3 text-gray-400" />
+                            <Info className="w-3 h-3 text-gray-500 dark:text-gray-400" />
                           </div>
                           
                           <AnimatePresence>
@@ -311,7 +307,7 @@ export function PricingCalculatorModern() {
                   >
                     <div className="text-xs font-semibold text-gray-900 dark:text-white mb-1">{name}</div>
                     <div className={`text-sm font-bold ${
-                      price === 0 ? 'text-gray-400' : 'text-emerald-400'
+                      price === 0 ? 'text-gray-500 dark:text-gray-400' : 'text-emerald-500 dark:text-emerald-400'
                     }`}>
                       {price === 0 ? 'Free' : `+$${price}`}
                     </div>
@@ -340,45 +336,45 @@ export function PricingCalculatorModern() {
             >
               <div className="p-4 rounded-2xl bg-white dark:bg-[#161B22] border-2 border-gray-200 dark:border-[#30363D] shadow-2xl dark:shadow-emerald-500/5 flex flex-col h-full min-h-[600px]">
                 {/* Selected Items */}
-                <div className="space-y-2 mb-4 flex-1 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-emerald-400/20 scrollbar-track-slate-800">
+                <div className="space-y-2 mb-4 flex-1 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-emerald-500/30 dark:scrollbar-thumb-emerald-400/20 scrollbar-track-gray-100 dark:scrollbar-track-slate-800">
                   {/* Website Package */}
-                  <div className="flex items-center justify-between p-2 rounded-lg bg-gray-50 dark:bg-[#1C2128] border border-gray-200 dark:border-[#30363D]">
+                  <div className="flex items-center justify-between p-2 rounded-lg bg-gray-100 dark:bg-[#1C2128] border border-gray-200 dark:border-[#30363D]">
                     <div className="flex items-center gap-2">
-                      <Check className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-                      <span className="text-xs text-gray-300">
+                      <Check className="w-3 h-3 text-emerald-500 dark:text-emerald-400 flex-shrink-0" />
+                      <span className="text-xs text-gray-700 dark:text-gray-300">
                         {websiteTypes[config.websiteType as keyof typeof websiteTypes].name}
                       </span>
                     </div>
-                    <span className="text-xs font-bold text-emerald-400">
+                    <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
                       ${websiteTypes[config.websiteType as keyof typeof websiteTypes].price}
                     </span>
                   </div>
 
                   {/* Free Features */}
-                  <div className="text-xs font-semibold text-gray-400 mt-3 mb-2">Always Included (FREE)</div>
+                  <div className="text-xs font-semibold text-gray-600 dark:text-gray-400 mt-3 mb-2">Always Included (FREE)</div>
                   {freeFeatures.map((feature, index) => (
-                    <div key={index} className="flex items-center justify-between p-2 rounded-lg bg-gray-50 dark:bg-[#0D1117] border border-transparent dark:border-[#30363D]/50">
+                    <div key={index} className="flex items-center justify-between p-2 rounded-lg bg-gray-100 dark:bg-[#0D1117] border border-gray-200 dark:border-[#30363D]/50">
                       <div className="flex items-center gap-2">
-                        <Check className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-                        <span className="text-xs text-gray-300">{feature.name}</span>
+                        <Check className="w-3 h-3 text-emerald-500 dark:text-emerald-400 flex-shrink-0" />
+                        <span className="text-xs text-gray-700 dark:text-gray-300">{feature.name}</span>
                       </div>
-                      <span className="text-xs text-emerald-400/60 font-medium">FREE</span>
+                      <span className="text-xs text-emerald-500 dark:text-emerald-400/60 font-medium">FREE</span>
                     </div>
                   ))}
 
                   {/* Selected Add-ons */}
                   {config.addons.length > 0 && (
                     <>
-                      <div className="text-xs font-semibold text-gray-400 mt-3 mb-2">Premium Add-Ons</div>
+                      <div className="text-xs font-semibold text-gray-600 dark:text-gray-400 mt-3 mb-2">Premium Add-Ons</div>
                       {config.addons.map((addon) => (
-                        <div key={addon} className="flex items-center justify-between p-2 rounded-lg bg-gray-50 dark:bg-[#1C2128] border border-gray-200 dark:border-[#30363D]">
+                        <div key={addon} className="flex items-center justify-between p-2 rounded-lg bg-gray-100 dark:bg-[#1C2128] border border-gray-200 dark:border-[#30363D]">
                           <div className="flex items-center gap-2">
-                            <Check className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-                            <span className="text-xs text-gray-300">
+                            <Check className="w-3 h-3 text-emerald-500 dark:text-emerald-400 flex-shrink-0" />
+                            <span className="text-xs text-gray-700 dark:text-gray-300">
                               {paidAddons[addon as keyof typeof paidAddons].name}
                             </span>
                           </div>
-                          <span className="text-xs font-bold text-emerald-400">
+                          <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
                             +${paidAddons[addon as keyof typeof paidAddons].price}
                           </span>
                         </div>
@@ -389,15 +385,15 @@ export function PricingCalculatorModern() {
                   {/* SEO Package */}
                   {config.seoPackage !== 'none' && (
                     <>
-                      <div className="text-xs font-semibold text-gray-400 mt-3 mb-2">SEO Package</div>
-                      <div className="flex items-center justify-between p-2 rounded-lg bg-gray-50 dark:bg-[#1C2128] border border-gray-200 dark:border-[#30363D]">
+                      <div className="text-xs font-semibold text-gray-600 dark:text-gray-400 mt-3 mb-2">SEO Package</div>
+                      <div className="flex items-center justify-between p-2 rounded-lg bg-gray-100 dark:bg-[#1C2128] border border-gray-200 dark:border-[#30363D]">
                         <div className="flex items-center gap-2">
-                          <Check className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-                          <span className="text-xs text-gray-300">
+                          <Check className="w-3 h-3 text-emerald-500 dark:text-emerald-400 flex-shrink-0" />
+                          <span className="text-xs text-gray-700 dark:text-gray-300">
                             {seoPackages[config.seoPackage as keyof typeof seoPackages].name}
                           </span>
                         </div>
-                        <span className="text-xs font-bold text-emerald-400">
+                        <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
                           +${seoPackages[config.seoPackage as keyof typeof seoPackages].price}
                         </span>
                       </div>
@@ -408,17 +404,17 @@ export function PricingCalculatorModern() {
                 {/* Total Price */}
                 <div className="border-t border-gray-200 dark:border-[#30363D] pt-4 mb-4">
                   <div className="flex items-baseline justify-between mb-1">
-                    <span className="text-sm text-gray-400">Total Investment</span>
+                    <span className="text-sm font-semibold text-gray-900 dark:text-gray-200">Total Investment</span>
                     <motion.div
                       key={totalPrice}
                       initial={{ scale: 1.1 }}
                       animate={{ scale: 1 }}
-                      className="text-4xl font-bold bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent"
+                      className="text-4xl font-bold bg-gradient-to-r from-emerald-600 to-green-600 dark:from-emerald-400 dark:to-green-400 bg-clip-text text-transparent"
                     >
                       ${totalPrice}
                     </motion.div>
                   </div>
-                  <p className="text-xs text-gray-400 text-right">One-time • No hidden fees</p>
+                  <p className="text-xs text-gray-600 dark:text-gray-500 text-right">One-time • No hidden fees</p>
                 </div>
 
                 {/* CTA Button */}

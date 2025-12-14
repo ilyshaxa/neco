@@ -8,33 +8,15 @@
     "contact": "Contact"
   },
   "hero": {
-    "headline": "Affordable Websites for Local Businesses",
-    "subheadline": "We create fast, modern, SEO-optimized websites with lifetime hosting, lifetime support, and domain assistance for businesses in Uzbekistan.",
+    "title1": "Affordable Websites",
+    "title2": "For Local Businesses",
+    "description": "We create fast, modern, SEO-optimized websites with lifetime hosting and support for businesses in Uzbekistan.",
     "cta_primary": "Get Your Website",
     "cta_secondary": "View Pricing",
-    "trust_badge_1": "Lifetime Hosting",
-    "trust_badge_2": "Lifetime Support",
-    "trust_badge_3": "7-14 Days Delivery"
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Everything you need to succeed online",
-    "web_dev": {
-      "title": "Website Development",
-      "description": "Custom, responsive websites tailored to your business needs with modern design and functionality."
-    },
-    "seo": {
-      "title": "SEO Optimization",
-      "description": "Improve your visibility on Google and Yandex search engines to attract more local customers."
-    },
-    "business_listings": {
-      "title": "Business Listings Setup",
-      "description": "Get your business listed on Google Maps and Yandex Maps to increase local visibility."
-    },
-    "domain": {
-      "title": "Domain Purchase Assistance",
-      "description": "We help you choose, purchase, and configure the perfect domain name for your business."
-    }
+    "trust_badge_1": "100% Satisfaction Guarantee",
+    "trust_badge_2": "24/7 Support",
+    "trust_badge_3": "Money-Back Guarantee",
+    "trust_badge_4": "Fast Delivery (7-14 days)"
   },
   "pricingCalculator": {
     "title": "Build Your Perfect Website",
@@ -49,37 +31,6 @@
     "yourQuote": "Your Quote",
     "getQuote": "Get This Quote",
     "noHiddenFees": "No hidden fees • Transparent pricing"
-  },
-  "portfolio": {
-    "title": "Our Work",
-    "subtitle": "Recent projects we're proud of",
-    "view_project": "View Project",
-    "projects": [
-      {
-        "name": "Local Restaurant",
-        "category": "Food & Beverage"
-      },
-      {
-        "name": "Dental Clinic",
-        "category": "Healthcare"
-      },
-      {
-        "name": "Law Firm",
-        "category": "Legal Services"
-      },
-      {
-        "name": "Beauty Salon",
-        "category": "Beauty & Wellness"
-      },
-      {
-        "name": "Accounting Firm",
-        "category": "Professional Services"
-      },
-      {
-        "name": "Real Estate Agency",
-        "category": "Real Estate"
-      }
-    ]
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -167,36 +118,6 @@
       }
     ]
   },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know",
-    "items": [
-      {
-        "question": "What's included in lifetime support?",
-        "answer": "Lifetime support includes bug fixes, security updates, content updates, and technical assistance for as long as you use our hosting. You'll never pay extra for maintenance."
-      },
-      {
-        "question": "How long does development take?",
-        "answer": "Most websites are completed within 7-14 days, depending on complexity. We'll provide you with a specific timeline during our initial consultation."
-      },
-      {
-        "question": "Can I update my website myself?",
-        "answer": "Yes! We provide training and documentation so you can make basic updates. For more complex changes, our support team is always available to help."
-      },
-      {
-        "question": "What if I need changes later?",
-        "answer": "Minor changes and updates are included in your lifetime support. For major redesigns or new features, we offer affordable upgrade packages."
-      },
-      {
-        "question": "Do you work with businesses outside Uzbekistan?",
-        "answer": "While we specialize in Uzbekistan businesses, we're happy to work with clients from neighboring countries. Contact us to discuss your project."
-      },
-      {
-        "question": "What if I don't have a domain yet?",
-        "answer": "No problem! We'll help you choose and purchase the perfect domain name for your business as part of our service."
-      }
-    ]
-  },
   "contact": {
     "title": "Get Your Website Today",
     "subtitle": "Fill out the form below and we'll respond within 24 hours",
@@ -227,6 +148,9 @@
     "contact_us": "Contact Us",
     "follow_us": "Follow Us",
     "rights": "All rights reserved.",
+    "legal": "Legal",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
     "trust_badges": {
       "satisfaction": "100% Satisfaction Guarantee",
       "support": "24/7 Support",
@@ -234,12 +158,9 @@
       "delivery": "Fast Delivery (7-14 days)"
     }
   },
-  "common": {
-    "learn_more": "Learn More",
-    "get_started": "Get Started",
-    "read_more": "Read More",
-    "close": "Close",
-    "menu": "Menu"
+  "notFound": {
+    "title": "404",
+    "description": "The page you're looking for doesn't exist. It may have been moved or deleted.",
+    "goBack": "Go Back"
   }
 }
-

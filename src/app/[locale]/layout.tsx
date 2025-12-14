@@ -3,8 +3,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 const locales = ['en', 'ru', 'uz'] as const;
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
-import { Header } from '@/components/layout/Header';
-import { Footer } from '@/components/layout/Footer';
+import { HeaderModern } from '@/components/layout/HeaderModern';
+import { FooterModernWrapper } from '@/components/layout/FooterModernWrapper';
+import { siteConfig, companyConfig, contactConfig } from '@/lib/config';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' });
@@ -15,7 +16,6 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://neco.uz';
   
   const titles = {
     en: 'Neco - Affordable Websites for Local Businesses',
@@ -40,8 +40,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title,
       description,
-      url: `${siteUrl}/${locale}`,
-      siteName: 'Neco',
+      url: `${siteConfig.url}/${locale}`,
+      siteName: siteConfig.name,
       locale: locale,
       type: 'website',
     },
@@ -62,11 +62,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       },
     },
     alternates: {
-      canonical: `${siteUrl}/${locale}`,
+      canonical: `${siteConfig.url}/${locale}`,
       languages: {
-        en: `${siteUrl}/en`,
-        ru: `${siteUrl}/ru`,
-        uz: `${siteUrl}/uz`,
+        en: `${siteConfig.url}/en`,
+        ru: `${siteConfig.url}/ru`,
+        uz: `${siteConfig.url}/uz`,
       },
     },
   };
@@ -91,27 +91,27 @@ export default async function LocaleLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Neco',
+    name: siteConfig.name,
     description: 'Professional website development with lifetime hosting and support',
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://neco.uz',
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://neco.uz'}/logo.png`,
+    url: siteConfig.url,
+    logo: `${siteConfig.url}/logo.png`,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+998-90-000-00-00',
+      telephone: contactConfig.phone,
       contactType: 'customer service',
       availableLanguage: ['English', 'Russian', 'Uzbek'],
     },
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'UZ',
-      addressLocality: 'Tashkent',
+      addressCountry: companyConfig.address.country,
+      addressLocality: companyConfig.address.city,
     },
-    sameAs: ['https://t.me/necoagency'],
+    sameAs: [contactConfig.telegram.url],
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',
-      lowPrice: '99',
-      highPrice: '499',
+      lowPrice: '49',
+      highPrice: '399',
     },
   };
 
@@ -123,12 +123,18 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      <body className={inter.className} suppressHydrationWarning>
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="light" 
+          enableSystem
+          disableTransitionOnChange
+          storageKey="neco-theme"
+        >
           <NextIntlClientProvider messages={messages} locale={locale}>
-            <Header />
+            <HeaderModern />
             <main>{children}</main>
-            <Footer />
+            <FooterModernWrapper />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

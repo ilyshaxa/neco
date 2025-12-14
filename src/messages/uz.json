@@ -8,33 +8,15 @@
     "contact": "Aloqa"
   },
   "hero": {
-    "headline": "Mahalliy bizneslar uchun arzon veb-saytlar",
-    "subheadline": "Biz O'zbekistondagi bizneslar uchun tez, zamonaviy, SEO-optimallashtirilgan veb-saytlarni umrbod hosting, umrbod qo'llab-quvvatlash va domen sotib olishda yordam bilan yaratamiz.",
+    "title1": "Arzon veb-saytlar",
+    "title2": "Mahalliy bizneslar uchun",
+    "description": "Biz O'zbekistondagi bizneslar uchun umrbod hosting va qo'llab-quvvatlash bilan tez, zamonaviy, SEO-optimallashtirilgan veb-saytlar yaratamiz.",
     "cta_primary": "Veb-saytga ega bo'ling",
     "cta_secondary": "Narxlarni ko'rish",
-    "trust_badge_1": "Umrbod hosting",
-    "trust_badge_2": "Umrbod qo'llab-quvvatlash",
-    "trust_badge_3": "7-14 kunlik yetkazib berish"
-  },
-  "services": {
-    "title": "Bizning xizmatlar",
-    "subtitle": "Onlaynda muvaffaqiyat qozonish uchun hamma narsa",
-    "web_dev": {
-      "title": "Veb-sayt ishlab chiqish",
-      "description": "Zamonaviy dizayn va funksionallik bilan biznesingiz ehtiyojlariga moslashtirilgan maxsus, moslashuvchan veb-saytlar."
-    },
-    "seo": {
-      "title": "SEO optimallashtirish",
-      "description": "Ko'proq mahalliy mijozlarni jalb qilish uchun Google va Yandex qidiruv tizimlarida ko'rinishingizni yaxshilang."
-    },
-    "business_listings": {
-      "title": "Biznes profillarini sozlash",
-      "description": "Mahalliy ko'rinishni oshirish uchun biznesingizni Google Maps va Yandex Xaritalarda joylashtiring."
-    },
-    "domain": {
-      "title": "Domen bilan yordam",
-      "description": "Biznesingiz uchun mukammal domen nomini tanlash, sotib olish va sozlashda yordam beramiz."
-    }
+    "trust_badge_1": "100% qoniqish kafolati",
+    "trust_badge_2": "24/7 qo'llab-quvvatlash",
+    "trust_badge_3": "Pulni qaytarish kafolati",
+    "trust_badge_4": "Tez yetkazib berish (7-14 kun)"
   },
   "pricingCalculator": {
     "title": "Mukammal veb-sayt yarating",
@@ -49,37 +31,6 @@
     "yourQuote": "Sizning taklifingiz",
     "getQuote": "Taklifni olish",
     "noHiddenFees": "Yashirin to'lovlar yo'q • Shaffof narxlar"
-  },
-  "portfolio": {
-    "title": "Bizning ishlar",
-    "subtitle": "Faxr qilayotgan so'nggi loyihalar",
-    "view_project": "Loyihani ko'rish",
-    "projects": [
-      {
-        "name": "Mahalliy restoran",
-        "category": "Oziq-ovqat va ichimliklar"
-      },
-      {
-        "name": "Stomatologiya klinikasi",
-        "category": "Sog'liqni saqlash"
-      },
-      {
-        "name": "Yuridik firma",
-        "category": "Yuridik xizmatlar"
-      },
-      {
-        "name": "Go'zallik saloni",
-        "category": "Go'zallik va sog'liq"
-      },
-      {
-        "name": "Buxgalteriya firmasi",
-        "category": "Professional xizmatlar"
-      },
-      {
-        "name": "Ko'chmas mulk agentligi",
-        "category": "Ko'chmas mulk"
-      }
-    ]
   },
   "testimonials": {
     "title": "Mijozlarimiz fikri",
@@ -167,36 +118,6 @@
       }
     ]
   },
-  "faq": {
-    "title": "Tez-tez beriladigan savollar",
-    "subtitle": "Bilishingiz kerak bo'lgan hamma narsa",
-    "items": [
-      {
-        "question": "Umrbod qo'llab-quvvatlash nimani o'z ichiga oladi?",
-        "answer": "Umrbod qo'llab-quvvatlash xatolarni tuzatish, xavfsizlik yangilanishlari, kontent yangilanishlari va hostingimizdan foydalanganingizcha texnik yordamni o'z ichiga oladi. Siz hech qachon texnik xizmat ko'rsatish uchun qo'shimcha to'laysiz."
-      },
-      {
-        "question": "Ishlab chiqish qancha vaqt oladi?",
-        "answer": "Aksariyat veb-saytlar murakkabligiga qarab 7-14 kun ichida yakunlanadi. Dastlabki maslahatlashish paytida sizga aniq muddatlarni taqdim etamiz."
-      },
-      {
-        "question": "Veb-saytimni o'zim yangilashim mumkinmi?",
-        "answer": "Ha! Asosiy yangilanishlarni amalga oshirish uchun o'qitish va hujjatlarni taqdim etamiz. Murakkabroq o'zgartirishlar uchun qo'llab-quvvatlash xizmatimiz doimo yordam berishga tayyor."
-      },
-      {
-        "question": "Keyinchalik o'zgartirishlar kerak bo'lsa-chi?",
-        "answer": "Kichik o'zgarishlar va yangilanishlar umrbod qo'llab-quvvatlashga kiritilgan. Katta qayta dizaynlar yoki yangi funksiyalar uchun arzon yangilanish paketlarini taklif qilamiz."
-      },
-      {
-        "question": "O'zbekistondan tashqaridagi biznes bilan ishlaydimi?",
-        "answer": "O'zbekiston biznesiga ixtisoslashgan bo'lsak-da, qo'shni mamlakatlardan mijozlar bilan ishlashdan mamnunmiz. Loyihangizni muhokama qilish uchun biz bilan bog'laning."
-      },
-      {
-        "question": "Hali domenim yo'q bo'lsa-chi?",
-        "answer": "Muammo yo'q! Xizmatimiz doirasida biznesingiz uchun mukammal domen nomini tanlash va sotib olishda yordam beramiz."
-      }
-    ]
-  },
   "contact": {
     "title": "Bugun veb-saytga ega bo'ling",
     "subtitle": "Quyidagi shaklni to'ldiring va biz 24 soat ichida javob beramiz",
@@ -227,6 +148,9 @@
     "contact_us": "Biz bilan bog'laning",
     "follow_us": "Bizni kuzatib boring",
     "rights": "Barcha huquqlar himoyalangan.",
+    "legal": "Huquqiy ma'lumot",
+    "terms": "Foydalanish shartlari",
+    "privacy": "Maxfiylik siyosati",
     "trust_badges": {
       "satisfaction": "100% qoniqish kafolati",
       "support": "24/7 qo'llab-quvvatlash",
@@ -234,12 +158,9 @@
       "delivery": "Tez yetkazib berish (7-14 kun)"
     }
   },
-  "common": {
-    "learn_more": "Ko'proq o'rganish",
-    "get_started": "Boshlash",
-    "read_more": "Davomini o'qish",
-    "close": "Yopish",
-    "menu": "Menyu"
+  "notFound": {
+    "title": "404",
+    "description": "Siz qidirayotgan sahifa mavjud emas. U ko'chirilgan yoki o'chirilgan bo'lishi mumkin.",
+    "goBack": "Orqaga"
   }
 }
-

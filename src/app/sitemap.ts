@@ -1,8 +1,10 @@
 import { MetadataRoute } from 'next';
-import { locales } from '@/lib/i18n';
+import { siteConfig } from '@/lib/config';
+
+const locales = ['en', 'ru', 'uz'] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://neco.uz';
+  const baseUrl = siteConfig.url;
   
   const routes = locales.map((locale) => ({
     url: `${baseUrl}/${locale}`,
