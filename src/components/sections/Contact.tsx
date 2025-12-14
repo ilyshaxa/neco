@@ -165,13 +165,13 @@ export function Contact() {
                   </Button>
 
                   {submitStatus === 'success' && (
-                    <div className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl text-green-800 dark:text-green-200">
+                    <div className="p-4 bg-green-50 dark:bg-[#1C2128] border border-green-200 dark:border-primary rounded-xl text-green-800 dark:text-primary">
                       {t('form.success')}
                     </div>
                   )}
 
                   {submitStatus === 'error' && (
-                    <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-red-800 dark:text-red-200">
+                    <div className="p-4 bg-red-50 dark:bg-[#1C2128] border border-red-200 dark:border-red-500/50 rounded-xl text-red-800 dark:text-red-400">
                       {t('form.error')}
                     </div>
                   )}
@@ -199,9 +199,9 @@ export function Contact() {
                     href="https://t.me/necoagency"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors group"
+                    className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-[#1C2128] hover:bg-gray-100 dark:hover:bg-[#21262D] transition-colors group border border-transparent dark:border-[#30363D]"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Send className="w-6 h-6 text-primary" />
                     </div>
                     <div>
@@ -216,9 +216,9 @@ export function Contact() {
 
                   <a
                     href="tel:+998900000000"
-                    className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors group"
+                    className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-[#1C2128] hover:bg-gray-100 dark:hover:bg-[#21262D] transition-colors group border border-transparent dark:border-[#30363D]"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
@@ -232,7 +232,7 @@ export function Contact() {
                   </a>
                 </div>
 
-                <div className="mt-6 p-4 bg-primary/10 rounded-xl">
+                <div className="mt-6 p-4 bg-primary/10 dark:bg-primary/20 rounded-xl border border-transparent dark:border-[#30363D]">
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <p className="text-sm text-gray-700 dark:text-gray-300">
