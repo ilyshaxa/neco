@@ -22,7 +22,7 @@ export function HeaderModern() {
       href: '#home',
     },
     {
-      label: 'How It Works',
+      label: t('nav.howItWorks'),
       href: '#how-it-works',
     },
     {

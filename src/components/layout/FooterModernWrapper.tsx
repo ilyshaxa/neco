@@ -20,7 +20,7 @@ export function FooterModernWrapper() {
       }
     },
     { 
-      name: 'How It Works', 
+      name: t('nav.howItWorks'), 
       href: '#how-it-works',
       onClick: (e: React.MouseEvent) => {
         e.preventDefault();
